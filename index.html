@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>TIMER</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link href="timer.ico" rel="icon">
+  <script src="js/gidisnd.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/t.min.js"></script>
+  <link rel="stylesheet" href="css/t.min.css">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Share-Tech-Mono' rel='stylesheet'>
+</head>
+
+<body id="bod">
+
+  <div id="control-top">
+    <button id="but_zoom_in" class="but" onclick="increaseFontSizeBy10px()">+</button>&nbsp
+    <button id="but_zoom_ou" class="but" onclick="decreaseFontSizeBy10px()">-</button>&nbsp
+  </div>
+
+  <div id="tim">00:00</div>
+  <div id="control">
+    <div>
+      Minutes: <input id="mins" type="number" step="1" min="1" value="10"></input>
+    </div>
+    <button id="but_start" class="but" data-role="button" onclick="start()">START</button>&nbsp
+    <button id="but_reset" class="but" data-role="button" onclick="reset() ">RESET</button>&nbsp
+    <!---->
+    <div>
+    </div>
+
+    <button id="but_sound" class="but" data-role="button" onclick="sound_settings() ">Sound</button>&nbsp
+    <div id="snd_popup" style="text-align:center;">
+      <button id="close" onclick="sound_settings()">X</button>
+
+      <input id="s1" type="radio" name="snd" value="time-s_up.mp3"> <label for="s1">snd1</label> <br /><br />
+      <input id="s2" type="radio" name="snd" value="time-s_up2.mp3"> <label for="s2">snd2</label><br /><br />
+      <input id="s3" type="radio" name="snd" value="time-s_up3.mp3"> <label for="s3">snd3</label><br /><br />
+      <input id="s4" type="radio" name="snd" value="Bell Sound Ring-SoundBible.com-181681426.mp3"> <label
+        for="s4">snd4</label><br /><br />
+      <input id="s5" type="radio" name="snd" value="old-fashioned-school-bell-daniel_simon.mp3"> <label
+        for="s5">snd5</label><br /><br />
+      <input id="s6" type="radio" name="snd" value="Ship_Bell-Mike_Koenig-1911209136.mp3"> <label
+        for="s6">snd6</label><br /><br />
+      <input id="s7" type="radio" name="snd" value="" selected> <label for="s7">none</label>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
